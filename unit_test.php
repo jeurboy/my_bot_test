@@ -57,10 +57,10 @@ class BotTest extends PHPUnit_Framework_TestCase
         $bot->walk('L');
         $this->assertEquals('west', $bot->getDirection());
 
-        print_r($bot->getPosition());
+        // print_r($bot->getPosition());
         $bot->walk('W10');
-        print_r($bot->getPosition());
-        // $this->assertEquals(array(-10, 0), $bot->getPosition());
+        // print_r($bot->getPosition());
+        $this->assertEquals(array(-10, 0), $bot->getPosition());
     }
 }
 
