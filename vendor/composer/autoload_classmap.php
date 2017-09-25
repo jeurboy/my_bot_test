@@ -10,6 +10,7 @@ return array(
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Factory.php',
     'Jeurboy\\Coordinate' => $baseDir . '/classes/Coordinate.php',
+    'Jeurboy\\Exception\\PathException' => $baseDir . '/exception/Path.php',
     'Jeurboy\\MyBot' => $baseDir . '/classes/MyBot.php',
     'Jeurboy\\Tokenizer' => $baseDir . '/classes/Tokenizer.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',

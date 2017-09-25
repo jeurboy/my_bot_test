@@ -1,7 +1,7 @@
 <?php 
 namespace Jeurboy;
 
-class Coordinate{
+class Coordinate {
 	public function __construct(int $x, int $y) {
 		$this->co_x = $x;
 		$this->co_y = $y;

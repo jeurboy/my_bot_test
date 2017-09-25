@@ -8,13 +8,20 @@ class Tokenizer {
 
 	public function getToken(){
 		$return = array();
+		$match  = false;
 
 		preg_match_all('/(\S\d*)/', $this->path, $return);
 
 		foreach($return[0] as $token) {
+			$match = true;
 			if($this->isValidPath($token) !== true) {
-				throw new \Exception("Incorrect path");
+				throw new Exception\PathException ("Incorrect path");
 			}
+		}
+
+		if(false === $match) {
+			throw new Exception\PathException ("Incorrect path");
+			exit;
 		}
 
  		return $return[0];

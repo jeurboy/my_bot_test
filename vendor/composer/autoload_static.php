@@ -25,6 +25,7 @@ class ComposerStaticInitaaa53c1f5d0685bdf3785da498a50b0e
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/File/Iterator/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/File/Iterator/Factory.php',
         'Jeurboy\\Coordinate' => __DIR__ . '/../..' . '/classes/Coordinate.php',
+        'Jeurboy\\Exception\\PathException' => __DIR__ . '/../..' . '/exception/Path.php',
         'Jeurboy\\MyBot' => __DIR__ . '/../..' . '/classes/MyBot.php',
         'Jeurboy\\Tokenizer' => __DIR__ . '/../..' . '/classes/Tokenizer.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',

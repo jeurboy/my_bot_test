@@ -10,6 +10,7 @@ class BotTest extends PHPUnit_Framework_TestCase
             'LLW100W50RW200W10',
             'LLLLLW99RRRRRW88LLLRL',
             'W55555RW555555W444444W1',
+            '',
         );
     }
     public function tearDown(){}
@@ -32,10 +33,13 @@ class BotTest extends PHPUnit_Framework_TestCase
         ), $return);
     }
     /**
-     * @expectedException Exception
+     * @expectedException Jeurboy\Exception\PathException
      */
     public function testTokenizerException() {
         $to = new \Jeurboy\Tokenizer("RLWN");
+        $to->getToken();
+
+        $to = new \Jeurboy\Tokenizer("");
         $to->getToken();
     }
     public function testMyBot() {

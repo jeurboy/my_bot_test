@@ -43,6 +43,8 @@ class MyBot{
 			case 'east'  : $this->coordinate->goEast($distance);  break;
 			case 'west'  : $this->coordinate->goWest($distance);  break;
 			case 'south' : $this->coordinate->goSouth($distance); break;
+
+			default : throw new \Exception ("Incorrect head up");
 		}
 	}
 	public function getDirection(){
